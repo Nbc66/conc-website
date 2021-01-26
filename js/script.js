@@ -13,7 +13,7 @@ document.onload = console.log("%c\"You might not think that programmers are arti
 
 )
 
-document.onload = console.log("well if you knew how to find this then you should probabaly contact us for a potencial new job")
+document.onload = console.log("if you have found this message then you should probabaly contact us for a new potential job");
 
 // Event Listeners Left
 left.addEventListener('mouseenter', () => {
