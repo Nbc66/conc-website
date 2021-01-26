@@ -65,6 +65,16 @@ h1 {
    background: #1f170b;
 }
 
+.video:not(:hover) {
+   opacity: 0%;
+   transition: 0.8s ease-in-out;
+}
+
+.video:hover {
+   opacity: 100%;
+   transition: 0.8s ease-in-out;
+}
+
 .split.right {
    right: 0;
    background: #121212;
