@@ -9,8 +9,7 @@ body {
    margin: 0;
 }
 
-#myVideo {
-
+.video {
    right: 0;
    bottom: 0;
    display: block;
@@ -23,8 +22,7 @@ body {
    z-index: 0;
 }
 
-#pf2 {
-
+.text-logo {
    position: relative;
    display: block;
    margin-top: 50%;
@@ -33,7 +31,6 @@ body {
    width: 50%;
    z-index: 2;
    filter: blur(0px);
-
 }
 
 h1 {
@@ -55,41 +52,27 @@ h1 {
 
 .split {
    position: absolute;
-   width: 33.3%;
+   width: 33.33%;
    height: 100%;
    overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: auto;
+   transition: all 1s ease-in-out;
 }
 
 .split.left {
    left: 0;
    background: url('left.jpg');
-   background-repeat: no-repeat;
-   background-size: auto;
-   width: 20%;
-   filter: blur(5px);
 }
 
 .split.right {
    right: 0;
    background: url('right.jpg');
-   background-repeat: no-repeat;
-   background-size: auto;
-   width: 20%;
-   filter: blur(5px);
 }
 
 .split.center {
-   left: 20%;
+   left: 33.333%;
    background: #b73739;
-   background-repeat: no-repeat;
-   background-size: auto;
-   width: 60%;
-}
-
-.split.left,
-.split.right,
-.split.center {
-   transition: all 1s ease-in-out;
 }
 
 /* Left Side */

@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
-      <title>Call of Duty Main Screen</title>
-   </head>
-   <body>
-      <div class="container">
-         <div class="split left">
-            <h1>Campaign</h1>
-         </div>
-         <a href=""></a>
-         <div id="center" class="split center">
-            
-            <img id="pf2" src="pf2.png"></img>
 
-            <video autoplay muted loop id="myVideo">
-               <source src="videoplayback.mp4" type="video/mp4">
-            </video>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style/style.css" />
+   <title>Concussion Studios Dev Homepage</title>
+</head>
 
-         
-            
-         </div>
-         <div class="split right">
-            <h1>Store</h1>
-         </div>
+<body>
+   <!-- Webpage Container -->
+   <div class="container">
+
+      <!-- Split Screen Left -->
+      <div class="split left">
+
+         <!-- Logo Left -->
+         <img class="text-logo logo-deathmatch" src="img/deathmatch.png"></img>
+
+         <!-- Video Left -->
+         <video poster="img/left.jpg" muted loop class="video video--deathmatch">
+            <source src="video/videoplayback.mp4" type="video/mp4">
+         </video>
+
       </div>
-      <script src="script.js"></script>
-   </body>
+
+      <!-- Split Screen Center -->
+      <div id="center" class="split center">
+
+         <!-- Logo Center -->
+         <img class="text-logo logo-pf2" src="img/pf2.png"></img>
+
+         <!-- Video Center -->
+         <video poster="img/middle.jpg" muted loop class="video video--pf2">
+            <source src="video/videoplayback.mp4" type="video/mp4">
+         </video>
+
+      </div>
+
+      <!-- Split Screen Right -->
+      <div class="split right">
+
+         <!-- Logo Right -->
+         <img class="text-logo logo-lambda" src="img/lambda.png"></img>
+
+         <!-- Video Right -->
+         <video poster="img/right.jpg" muted loop class="video video--lambda">
+            <source src="video/videoplayback.mp4" type="video/mp4">
+         </video>
+
+      </div>
+   </div>
+   <!-- Script -->
+   <script src="js/script.js"></script>
+</body>
+
 </html>
