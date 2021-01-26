@@ -24,7 +24,7 @@ right.addEventListener('mouseenter', () => {
     container.classList.add('hover-right');
     rightVideo.play();
 });
-//right.addEventListener('mouseenter', () => 
+
 right.addEventListener('mouseleave', () => {
     container.classList.remove('hover-right');
     rightVideo.pause();
