@@ -7,7 +7,13 @@ const leftVideo = document.querySelector('.video--deathmatch');
 const rightVideo = document.querySelector('.video--lambda');
 const centerVideo = document.querySelector('.video--pf2');
 
-let RightCSS = document.querySelector('.right');
+document.onload = console.log("%c\"You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.\"%c-John Romero",
+
+    "color:#40e0d0;font-family:Helvetica;font-size:1rem;font-weight:bold", "font-family:system-ui;font-size:1rem;font-weight:bold"
+
+)
+
+document.onload = console.log("well if you knew how to find this then you should probabaly contact us for a potencial new job")
 
 // Event Listeners Left
 left.addEventListener('mouseenter', () => {
@@ -24,7 +30,7 @@ right.addEventListener('mouseenter', () => {
     container.classList.add('hover-right');
     rightVideo.play();
 });
-
+//right.addEventListener('mouseenter', () => 
 right.addEventListener('mouseleave', () => {
     container.classList.remove('hover-right');
     rightVideo.pause();
