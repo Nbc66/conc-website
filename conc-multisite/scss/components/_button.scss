@@ -1,0 +1,30 @@
+button {
+	background-color: $color-white;
+	border: none;
+	color: $color-black;
+	font-size: 2rem;
+	padding: 1.5rem;
+
+	&:hover {
+		color: #222;
+	}
+}
+
+.action-buttons button {
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	z-index: 100;
+}
+
+.down-button {
+	transform: translateX(-100%);
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+
+.up-button {
+	transform: translateY(-100%);
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
