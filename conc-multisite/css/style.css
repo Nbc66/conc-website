@@ -20,7 +20,7 @@ p {
 	box-sizing: inherit;
 }
 button {
-	border: none;
+	border: 1px #fff solid;
 	color: #fff;
 	font-size: 2rem;
 	padding: 1.5rem;

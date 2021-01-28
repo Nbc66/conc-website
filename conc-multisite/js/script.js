@@ -21,6 +21,7 @@ downButton.addEventListener('click', () => {
     changeColor('down');
 });
 
+// Slide Function
 const changeSlide = (direction) => {
     const sliderHeight = sliderContainer.clientHeight;
     if (direction === 'up') {
@@ -43,12 +44,12 @@ const changeSlide = (direction) => {
     slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`;
 };
 
-
+// Variables
 const colorArrayUp = ['#b73739', '#1f170b', '#121212', '#000'];
-const colorArrayDown = ['#121212', '#000', '#b73739', '#1f170b'];
 let colorUp = 0;
-let colorDown = 0;
+let colorDown = 2;
 
+// Change Color Function
 const changeColor = (direction) => {
     if (direction === 'up') {
         colorUp++;
@@ -74,5 +75,5 @@ const changeColor = (direction) => {
 
     }
     upButton.style.background = `${colorArrayUp[colorUp]}`;
-    downButton.style.background = `${colorArrayDown[colorDown]}`;
+    downButton.style.background = `${colorArrayUp[colorDown]}`;
 };
