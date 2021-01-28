@@ -20,14 +20,10 @@ p {
 	box-sizing: inherit;
 }
 button {
-	background-color: #fff;
 	border: none;
-	color: #000;
+	color: #fff;
 	font-size: 2rem;
 	padding: 1.5rem;
-}
-button:hover {
-	color: #222;
 }
 .action-buttons button {
 	position: absolute;
@@ -39,11 +35,13 @@ button:hover {
 	transform: translateX(-100%);
 	border-top-left-radius: 0.5rem;
 	border-bottom-left-radius: 0.5rem;
+	background: #121212;
 }
 .up-button {
 	transform: translateY(-100%);
 	border-top-right-radius: 0.5rem;
 	border-bottom-right-radius: 0.5rem;
+	background: #b73739;
 }
 .slider-container {
 	position: relative;
@@ -67,9 +65,8 @@ button:hover {
 	align-items: center;
 	justify-content: center;
 }
-.left-slide h1 {
-	margin-bottom: 1rem;
-	margin-top: -3rem;
+.left-slide img {
+	margin-bottom: 2rem;
 }
 .right-slide {
 	height: 100%;
@@ -112,4 +109,23 @@ button:hover {
 }
 .lambda {
 	background: #121212;
+}
+.logo {
+	width: 90%;
+}
+.conc-logo {
+	margin-top: 6rem;
+	width: 40%;
+}
+.pf2-logo {
+	width: 40%;
+	margin-top: 2rem;
+}
+.dmcr-logo {
+	width: 45%;
+	margin-top: 6rem;
+}
+.lambda-logo {
+	width: 50%;
+	margin-top: 4rem;
 }
