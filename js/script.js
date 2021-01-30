@@ -6,7 +6,8 @@ const upButton = document.querySelector('.up-button');
 const downButton = document.querySelector('.down-button');
 const slidesLength = slideRight.querySelectorAll('div').length;
 
-
+document.querySelector(".up-button").style.transitionDuration = "1s";
+document.querySelector(".down-button").style.transitionDuration = "1s";
 
 let activeSlideIndex = 0;
 
@@ -15,12 +16,10 @@ slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
 upButton.addEventListener('click', () => {
     changeSlide('up');
     changeColor('up');
-    document.querySelector(".up-button").style.transitionDuration = "1s";
 });
 downButton.addEventListener('click', () => {
     changeSlide('down');
     changeColor('down');
-    document.querySelector(".down-button").style.transitionDuration = "1s";
 });
 
 // Slide Function
