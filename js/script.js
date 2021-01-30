@@ -15,10 +15,12 @@ slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
 upButton.addEventListener('click', () => {
     changeSlide('up');
     changeColor('up');
+    document.querySelector(".up-button").style.transitionDuration = "1s";
 });
 downButton.addEventListener('click', () => {
     changeSlide('down');
     changeColor('down');
+    document.querySelector(".down-button").style.transitionDuration = "1s";
 });
 
 // Slide Function
@@ -76,4 +78,5 @@ const changeColor = (direction) => {
     }
     upButton.style.background = `${colorArrayUp[colorUp]}`;
     downButton.style.background = `${colorArrayUp[colorDown]}`;
+    
 };
